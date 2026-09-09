@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словники - Практичне завдання</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Застосовуємо на практиці</h1>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="changeTab('dialects', this)">Вправа 1: Діалектизми</button>
+            <button class="tab-btn" onclick="changeTab('slang', this)">Вправа 2: Молодіжний сленг</button>
+            <button class="tab-btn" onclick="changeTab('neologisms', this)">Вправа 3: Авторські неологізми</button>
+        </div>
+
+        <div class="content-card">
+            <div class="task-description" id="task-desc">
+                <!-- Опис завдання генеруватиметься через JS -->
+            </div>
+
+            <table id="dictionary-table">
+                <thead>
+                    <tr id="table-header">
+                        <!-- Заголовки таблиці генеруватимуться через JS -->
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Рядки словника генеруватимуться через JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
